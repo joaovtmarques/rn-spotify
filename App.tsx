@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { useFonts } from 'expo-font';
 
-import { Home, Loading } from './src/screens';
+import { Loading, Home } from './src/screens';
 
 import satoshiBold from './src/assets/fonts/Satoshi-Bold.otf';
 import satoshiRegular from './src/assets/fonts/Satoshi-Regular.otf';
