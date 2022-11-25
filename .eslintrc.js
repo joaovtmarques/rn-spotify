@@ -49,6 +49,9 @@ module.exports = {
         args: 'after-used',
         argsIgnorePattern: '^_'
       }
-    ]
+    ],
+    '@typescript-eslint/comma-spacing': 'warn',
+    semi: ['error', 'always'],
+    '@typescript-eslint/semi': 'off'
   }
-}
+};
