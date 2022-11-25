@@ -1,9 +1,9 @@
 import {
-  View,
-  SafeAreaView,
   ImageBackground,
+  SafeAreaView,
   Text,
   TouchableOpacity,
+  View,
 } from 'react-native';
 
 import backgroundImg from '../../assets/get-started-background.png';

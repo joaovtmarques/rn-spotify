@@ -10,16 +10,13 @@ module.exports = {
         'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
       ],
-
-      parserOptions: {
-        project: ['./tsconfig.json'],
-      },
     },
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
+    project: ['./tsconfig.json'],
   },
   plugins: ['react', 'unused-imports'],
   rules: {
@@ -50,5 +47,7 @@ module.exports = {
     '@typescript-eslint/space-before-function-paren': 'off',
     'comma-dangle': 'off',
     '@typescript-eslint/comma-dangle': 'off',
+    '@typescript-eslint/member-delimiter-style': 'off',
   },
+  ignorePatterns: ['.eslintrc.js'],
 };
