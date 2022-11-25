@@ -15,7 +15,7 @@ export function Button({ title, styles, ...rest }: ButtonProps) {
       activeOpacity={0.75}
       className={
         styles?.sButton ??
-        'min-h-[92px] flex-1 bg-primaryGreen rounded-[30px] items-center justify-center mt-9'
+        'min-h-[92px] w-full bg-primaryGreen rounded-[30px] items-center justify-center mt-9'
       }
     >
       <Text
