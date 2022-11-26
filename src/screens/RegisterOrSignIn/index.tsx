@@ -13,11 +13,8 @@ export function RegisterOrSignIn() {
       <SafeAreaView className="flex-1 m-7">
         <View>
           <ButtonWithIcon
-            props={{
-              icon: LeftArrowIcon,
-              style:
-                'h-8 w-8 rounded-full bg-white/[0.03] items-center justify-center',
-            }}
+            icon={LeftArrowIcon}
+            styles="h-8 w-8 rounded-full bg-white/[0.03] items-center justify-center"
           />
         </View>
         <View className="flex-1 items-center">

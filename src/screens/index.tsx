@@ -3,5 +3,6 @@ import { GetStarted } from './GetStarted';
 import { Home } from './Home';
 import { Loading } from './Loading';
 import { RegisterOrSignIn } from './RegisterOrSignIn';
+import { SignIn } from './SignIn';
 
-export { Home, Loading, GetStarted, ChooseMode, RegisterOrSignIn };
+export { Home, Loading, GetStarted, ChooseMode, RegisterOrSignIn, SignIn };
