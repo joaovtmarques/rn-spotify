@@ -50,5 +50,5 @@ module.exports = {
     '@typescript-eslint/member-delimiter-style': 'off',
     '@typescript-eslint/strict-boolean-expressions': 'off',
   },
-  ignorePatterns: ['.eslintrc.js'],
+  ignorePatterns: ['.eslintrc.js', 'app.routes.tsx', '*.d.ts'],
 };

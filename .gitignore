@@ -9,6 +9,7 @@ npm-debug.*
 *.mobileprovision
 *.orig.*
 web-build/
+.eslintignore
 
 # macOS
 .DS_Store
