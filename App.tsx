@@ -4,7 +4,7 @@ import { StatusBar } from 'expo-status-bar';
 import satoshiBold from './src/assets/fonts/Satoshi-Bold.otf';
 import satoshiLight from './src/assets/fonts/Satoshi-Light.otf';
 import satoshiRegular from './src/assets/fonts/Satoshi-Regular.otf';
-import { Loading, SignIn } from './src/screens';
+import { Loading, Register } from './src/screens';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -16,7 +16,7 @@ export default function App() {
   return (
     <>
       <StatusBar hidden />
-      {!fontsLoaded ? <Loading /> : <SignIn />}
+      {!fontsLoaded ? <Loading /> : <Register />}
     </>
   );
 }
