@@ -1,7 +1,5 @@
 import { BottomTabBarButtonProps } from '@react-navigation/bottom-tabs';
 import {
-  AccessibilityState,
-  GestureResponderEvent,
   TouchableOpacity,
 } from 'react-native';
 import { SvgProps } from 'react-native-svg';
@@ -13,14 +11,6 @@ interface itemProps extends BottomTabBarButtonProps {
     filledIcon: React.FC<SvgProps>;
     component: () => JSX.Element;
   };
-  onPress?:
-  | ((
-    e:
-    | React.MouseEvent<HTMLAnchorElement, MouseEvent>
-    | GestureResponderEvent
-  ) => void)
-  | undefined;
-  accessibilityState?: AccessibilityState | undefined;
 }
 
 export function TabButton(props: itemProps) {
