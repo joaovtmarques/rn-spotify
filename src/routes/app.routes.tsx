@@ -1,6 +1,6 @@
 import { createStackNavigator } from '@react-navigation/stack';
 
-import { Home, Favorites, Song, Profile, Register, SignIn, RegisterOrSignIn, GetStarted, ChooseMode } from '../screens';
+import { ChooseMode, GetStarted, Register, RegisterOrSignIn, SignIn, Song } from '../screens';
 import { Tab } from './tab.routes';
 
 const { Navigator, Screen } = createStackNavigator();
@@ -19,6 +19,7 @@ export function AppRoutes() {
       <Screen name="register" component={Register} />
       <Screen name="signIn" component={SignIn} />
       <Screen name="tab" component={Tab} />
+      <Screen name="song" component={Song} />
     </Navigator>
   );
 }

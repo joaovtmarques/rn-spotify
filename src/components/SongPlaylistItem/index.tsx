@@ -1,16 +1,20 @@
+import { useNavigation } from '@react-navigation/native';
 import { Text, TouchableOpacity, View } from 'react-native';
-import { ButtonWithIcon } from '../ButtonWithIcon';
 
 import HeartIcon from '../../assets/icons/heart-grey-icon.svg';
 import playIcon from '../../assets/icons/play-icon.svg';
+import { ButtonWithIcon } from '../ButtonWithIcon';
 
 export function SongPlaylistItem() {
+  const navigation = useNavigation();
+
   return (
     <TouchableOpacity className="flex-row items-center justify-between mt-6">
       <View className="flex-row items-center">
         <ButtonWithIcon
           icon={playIcon}
-          styles="h-9 w-9 bg-[#2C2C2C] rounded-full items-center justify-center "
+          styles="h-9 w-9 bg-[#2C2C2C] rounded-full items-center justify-center"
+          onPress={() => navigation.navigate('song')}
         />
         <View className="ml-6">
           <Text className="text-lightGrey text-base font-sBold">As It Was</Text>

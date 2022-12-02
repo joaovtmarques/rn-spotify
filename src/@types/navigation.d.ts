@@ -10,7 +10,7 @@ export declare global {
   namespace ReactNavigation {
     interface RootParamList {
       home: undefined;
-      music: {
+      song: {
         id: string;
         title: string;
         artist: string;
