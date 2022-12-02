@@ -1,3 +1,4 @@
+import { AlbumCard } from './AlbumCard';
 import { Button } from './Button';
 import { ButtonWithIcon } from './ButtonWithIcon';
 import { ChooseModeButton } from './ChooseModeButton';
@@ -18,4 +19,5 @@ export {
   NewAlbumCard,
   SongCard,
   SongPlaylistItem,
+  AlbumCard,
 };
