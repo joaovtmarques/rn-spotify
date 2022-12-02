@@ -1,8 +1,6 @@
-import { BottomTabBarButtonProps } from '@react-navigation/bottom-tabs';
-import {
-  TouchableOpacity,
-} from 'react-native';
 import { SvgProps } from 'react-native-svg';
+import { TouchableOpacity, View } from 'react-native';
+import { BottomTabBarButtonProps } from '@react-navigation/bottom-tabs';
 
 interface itemProps extends BottomTabBarButtonProps {
   item: {
@@ -20,12 +18,21 @@ export function TabButton(props: itemProps) {
   const Icon = item;
 
   return (
-    <TouchableOpacity
-      onPress={onPress}
-      activeOpacity={0.5}
-      className={`ml-8 mr-8 w-8 items-center justify-center ${focused ? 'border-t-4 border-primaryGreen border-spacing-5 rounded-[3.5px]' : ''}`}
-    >
-      {focused ? <Icon.filledIcon /> : <Icon.icon />}
-    </TouchableOpacity>
+    <View className="ml-8 mr-8 justify-start">
+      <View
+        className={`h-1 w-full mb-5 ${
+          focused ? 'bg-primaryGreen' : ''
+        } rounded-br-[3.5px] rounded-bl-[3.5px]`}
+      />
+      <TouchableOpacity
+        onPress={onPress}
+        activeOpacity={0.5}
+        className={`${
+          focused && item.route === 'profile' ? 'py-[2px] px-1' : ''
+        }`}
+      >
+        {focused ? <Icon.filledIcon /> : <Icon.icon />}
+      </TouchableOpacity>
+    </View>
   );
 }
