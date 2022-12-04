@@ -36,6 +36,10 @@ export function Home() {
     );
   };
 
+  // useEffect(() => {
+  //   console.log(SPOTIFYSCRAPPER_HOST);
+  // }, []);
+
   return (
     <SafeAreaView className="flex-1 bg-primary">
       <View className="w-full px-7 py-4">

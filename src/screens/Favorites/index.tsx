@@ -1,19 +1,10 @@
-import {
-  View,
-  Text,
-  Image,
-  SafeAreaView,
-  ScrollView,
-  ImageSourcePropType,
-} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import { Image, SafeAreaView, ScrollView, Text, View } from 'react-native';
 
-import { AlbumCard, ButtonWithIcon, SongPlaylistItem } from '../../components';
-
-import MoreIcon from '../../assets/icons/more-icon.svg';
 import LeftArrowIcon from '../../assets/icons/left-arrow-icon.svg';
-
+import MoreIcon from '../../assets/icons/more-icon.svg';
 import backgroundImg from '../../assets/song-card-image.png';
+import { AlbumCard, ButtonWithIcon, SongPlaylistItem } from '../../components';
 
 export function Favorites() {
   const navigation = useNavigation();
@@ -21,7 +12,7 @@ export function Favorites() {
   return (
     <View className="flex-1 bg-primary">
       <Image
-        source={backgroundImg as ImageSourcePropType}
+        source={backgroundImg}
         className="w-full h-60 rounded-b-[70px]"
         resizeMode="cover"
       />
