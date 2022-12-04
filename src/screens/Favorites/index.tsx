@@ -1,4 +1,11 @@
-import { View, Text, Image, SafeAreaView, ScrollView } from 'react-native';
+import {
+  View,
+  Text,
+  Image,
+  SafeAreaView,
+  ScrollView,
+  ImageSourcePropType,
+} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 import { AlbumCard, ButtonWithIcon, SongPlaylistItem } from '../../components';
@@ -14,7 +21,7 @@ export function Favorites() {
   return (
     <View className="flex-1 bg-primary">
       <Image
-        source={backgroundImg}
+        source={backgroundImg as ImageSourcePropType}
         className="w-full h-60 rounded-b-[70px]"
         resizeMode="cover"
       />
