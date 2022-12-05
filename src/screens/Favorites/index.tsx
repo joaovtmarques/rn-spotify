@@ -5,7 +5,7 @@ import { AlbumCard, ButtonWithIcon, SongPlaylistItem } from '../../components';
 
 import MoreIcon from '../../assets/icons/more-icon.svg';
 import LeftArrowIcon from '../../assets/icons/left-arrow-icon.svg';
-import backgroundImg from '../../assets/song-card-image.png';
+import backgroundImg from '../../assets/artist-page-background.png';
 
 export function Favorites() {
   const navigation = useNavigation();
