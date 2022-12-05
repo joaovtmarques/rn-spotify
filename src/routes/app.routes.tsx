@@ -1,11 +1,18 @@
 import { createStackNavigator } from '@react-navigation/stack';
 
-import { ChooseMode, GetStarted, Register, RegisterOrSignIn, SignIn, Song } from '../screens';
+import {
+  ChooseMode,
+  GetStarted,
+  Register,
+  RegisterOrSignIn,
+  SignIn,
+  Song,
+} from '../screens';
 import { Tab } from './tab.routes';
 
-const { Navigator, Screen } = createStackNavigator();
-
 export function AppRoutes() {
+  const { Navigator, Screen } = createStackNavigator();
+
   return (
     <Navigator
       screenOptions={{

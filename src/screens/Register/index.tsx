@@ -6,9 +6,9 @@ import { Button, ButtonWithIcon, Heading, Input } from '../../components';
 
 import Logo from '../../assets/logo.svg';
 import HideIcon from '../../assets/icons/hide-icon.svg';
-import LeftArrowIcon from '../../assets/icons/left-arrow-icon.svg';
-import GoogleIcon from '../../assets/icons/google-icon.svg';
 import AppleIcon from '../../assets/icons/apple-icon.svg';
+import GoogleIcon from '../../assets/icons/google-icon.svg';
+import LeftArrowIcon from '../../assets/icons/left-arrow-icon.svg';
 
 export function Register() {
   const [hide, setHide] = useState(true);

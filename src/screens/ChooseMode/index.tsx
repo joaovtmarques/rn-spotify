@@ -1,5 +1,5 @@
-import { ImageBackground, SafeAreaView, Text, View } from 'react-native';
 import { useState } from 'react';
+import { ImageBackground, SafeAreaView, Text, View } from 'react-native';
 
 import { Button, ChooseModeButton } from '../../components';
 
@@ -12,11 +12,7 @@ export function ChooseMode() {
   const [mode, setMode] = useState('dark');
 
   return (
-    <ImageBackground
-      className="flex-1"
-      source={backgroundImg}
-      defaultSource={backgroundImg}
-    >
+    <ImageBackground className="flex-1" source={backgroundImg}>
       <SafeAreaView className="flex-1 items-center justify-between m-7">
         <Logo />
         <View className="items-center w-full">

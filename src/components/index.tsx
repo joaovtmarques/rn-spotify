@@ -11,15 +11,15 @@ import { SongPlaylistItem } from './SongPlaylistItem';
 import { TabButton } from './TabButton';
 
 export {
-  ChooseModeButton,
+  AlbumCard,
   Button,
   ButtonWithIcon,
+  ChooseModeButton,
   Heading,
   Input,
-  TabButton,
   NewAlbumCard,
+  ProfileSongItem,
   SongCard,
   SongPlaylistItem,
-  AlbumCard,
-  ProfileSongItem,
+  TabButton,
 };

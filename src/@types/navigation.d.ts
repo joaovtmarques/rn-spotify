@@ -1,22 +1,8 @@
-export interface MusicParams {
-  id: string;
-  title: string;
-  artist: string;
-  duration: string;
-  bannerUrl: string;
-}
-
 export declare global {
   namespace ReactNavigation {
     interface RootParamList {
       home: undefined;
-      song: {
-        id: string;
-        title: string;
-        artist: string;
-        duration: string;
-        bannerUrl: string;
-      };
+      song: undefined;
       profile: undefined;
       favorites: undefined;
     }

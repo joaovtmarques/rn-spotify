@@ -11,15 +11,15 @@ import { SignIn } from './SignIn';
 import { Song } from './Song';
 
 export {
+  ChooseMode,
+  Discovery,
+  Favorites,
+  GetStarted,
   Home,
   Loading,
-  GetStarted,
-  ChooseMode,
+  Profile,
+  Register,
   RegisterOrSignIn,
   SignIn,
-  Register,
-  Profile,
-  Favorites,
   Song,
-  Discovery,
 };

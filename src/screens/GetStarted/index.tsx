@@ -1,16 +1,13 @@
 import { ImageBackground, SafeAreaView, Text, View } from 'react-native';
 
-import backgroundImg from '../../assets/get-started-background.png';
-import Logo from '../../assets/logo.svg';
 import { Button } from '../../components';
+
+import Logo from '../../assets/logo.svg';
+import backgroundImg from '../../assets/get-started-background.png';
 
 export function GetStarted() {
   return (
-    <ImageBackground
-      className="flex-1"
-      source={backgroundImg}
-      defaultSource={backgroundImg}
-    >
+    <ImageBackground className="flex-1" source={backgroundImg}>
       <SafeAreaView className="flex-1 items-center justify-between m-7">
         <Logo />
         <View className="items-center w-full">

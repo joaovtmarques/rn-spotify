@@ -1,11 +1,13 @@
 import { useNavigation } from '@react-navigation/native';
 import { Image, SafeAreaView, ScrollView, Text, View } from 'react-native';
 
-import LeftArrowIcon from '../../assets/icons/left-arrow-icon.svg';
-import MoreIcon from '../../assets/icons/more-icon.svg';
-import backgroundImg from '../../assets/profile-background.png';
-import profileImg from '../../assets/profile-image.jpg';
 import { ButtonWithIcon, ProfileSongItem } from '../../components';
+
+import MoreIcon from '../../assets/icons/more-icon.svg';
+import LeftArrowIcon from '../../assets/icons/left-arrow-icon.svg';
+
+import profileImg from '../../assets/profile-image.jpg';
+import backgroundImg from '../../assets/profile-background.png';
 
 export function Profile() {
   const navigation = useNavigation();
